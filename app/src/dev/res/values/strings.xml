@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tricks (Dev)</string>
+    <string name="title_dev_activity_launch">Launch Activity (Dev)</string>
+
+</resources>
