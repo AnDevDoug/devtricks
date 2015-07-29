@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Activities -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text="Developer Test Screen"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Activities"
+            android:textSize="20sp"/>
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_launch_app_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App Home"/>
+
+            <Button
+                android:id="@+id/button_launch_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"/>
+
+        </org.apmem.tools.layouts.FlowLayout>
+
+        <!-- Searches -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Searches"
+            android:textSize="20sp"/>
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/search_really_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search 'a really long search term'"/>
+
+            <Button
+                android:id="@+id/search_something_difficult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search 'sòmêthīng dîffïcúlt'"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+                <Button
+                    android:id="@+id/search_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search"/>
+                <Button
+                    android:id="@+id/search_text_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search, Limit 5"/>
+            </LinearLayout>
+
+        </org.apmem.tools.layouts.FlowLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="24dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
